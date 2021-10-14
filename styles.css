@@ -56,7 +56,6 @@
 }
 .abo{
     align-items: center;
-    height: calc(100vh - 60vh);
 }
 .aboutGD{
     display: flex;
@@ -67,9 +66,11 @@
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-    margin: 2em 4em;
+    margin: 2em 1em;
     border: 1px solid #000;
     border-radius: 10px;
+    min-width: 20%;
+    max-width: 30%;
 }
 .aboutGD div hr{
     border: 1px solid black;
