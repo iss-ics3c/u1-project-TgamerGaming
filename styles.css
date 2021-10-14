@@ -48,7 +48,8 @@
     justify-content: center;
 }
 .main *{
-    display: flex;
+    display: grid;
+    grid-template: 1fr 1fr/auto auto;
 }
 .home{
     align-items: center;
