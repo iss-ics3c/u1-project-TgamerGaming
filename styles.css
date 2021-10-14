@@ -48,8 +48,7 @@
     justify-content: center;
 }
 .main *{
-    display: grid;
-    grid-template: 1fr 1fr/auto auto;
+    display: flex;
 }
 .home{
     align-items: center;
@@ -59,7 +58,8 @@
     align-items: center;
 }
 .aboutGD{
-    display: flex;
+    display: grid;
+    grid-template: 1fr 1fr/auto auto;
     justify-content: space-around;
     flex-wrap: wrap;
 }
