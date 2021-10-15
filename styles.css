@@ -52,6 +52,9 @@
     background: transparent;
     padding: 1em;
 }
+.cells iframe{
+    width: 100%;
+}
 .home{
     align-items: center;
     justify-content: center;
