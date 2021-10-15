@@ -53,7 +53,8 @@
     padding: 1em;
 }
 .cells iframe{
-    width: 100%;
+    width: 50%;
+    height: auto;
 }
 .home{
     align-items: center;
