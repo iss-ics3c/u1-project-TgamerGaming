@@ -18,22 +18,12 @@
     text-decoration: none;
     color: rgba(243, 243, 243, 1);
 }
-.nav li a:hover{
-    background: aqua;
-    color: rgba(63, 63, 63, 1);
-    padding: 0.5em 0;
-}
 .nav h3{
     list-style: none;
 }
 .nav h3 a{
     text-decoration: none;
     color: rgba(243, 243, 243, 1);
-}
-.nav h3 a:hover{
-    background: aqua;
-    color: rgba(63, 63, 63, 1);
-    padding: 0.2em 0;
 }
 .main{
     width: 100%;
@@ -46,35 +36,26 @@
 .main h1{
     display: flex;
     justify-content: center;
+    padding-top: 2em;
 }
-.main *{
+.contain{
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 1em;
+    margin: 0 auto;
+    width: 80vw;
+    height: max-content;
+}
+.cells{
     display: flex;
+    flex-direction: column;
+    background: transparent;
+    padding: 1em;
 }
 .home{
     align-items: center;
-    height: calc(100vh - 45px);
-}
-.abo{
-    align-items: center;
-}
-.aboutGD{
-    display: grid;
-    grid-template: 1fr 1fr/auto auto;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-.aboutGD div{
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    margin: 2em 0;
-    border: 1px solid #000;
-    border-radius: 10px;
-    min-width: 20vw;
-    max-width: 35vw;
-}
-.aboutGD div hr{
-    border: 1px solid black;
+    justify-content: center;
+    height: calc(100vh - 45px - 2em);
 }
 .bottom{
     background: rgba(63, 63, 63, 0.8);
@@ -82,4 +63,14 @@
     height: 20px;
     position: fixed;
     bottom: 0;
+}
+@media only screen and (min-width: 768px) {
+    .contain{
+        grid-template-columns: auto auto;
+    }
+}
+@media only screen and (min-width: 1000px){
+    .contain{
+        grid-template-columns: auto auto auto;
+    }
 }
