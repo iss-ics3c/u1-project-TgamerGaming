@@ -49,7 +49,7 @@
 .cells{
     display: flex;
     flex-direction: column;
-    background: transparent;
+    background: #3f3f3f;
     padding: 1em;
 }
 .cells iframe{
